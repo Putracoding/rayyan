@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif-cormorant: "Cormorant Garamond", serif;
+  --font-serif-display: "Playfair Display", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-prestige-cream: #fbfaf8;
+  --color-prestige-ink: #1a1a1a;
+  --color-prestige-gold: #c5a059;
+  --color-prestige-charcoal: #2c2c2c;
+}
+
+@layer base {
+  body {
+    @apply bg-prestige-cream text-prestige-ink font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif-display tracking-tight leading-tight;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
